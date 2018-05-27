@@ -1,0 +1,16 @@
+
+<div>
+    <h2>Paint List</h2>
+
+    <div *ngIf="paints.isEmpty">
+        <h3>No paints loaded!</h3>
+    </div>
+
+    <div *ngIf="paints.isNotEmpty">
+        <ul>
+            <li *ngFor="let paint of paints">
+                {{paint}}
+            </li>
+        </ul>
+    </div>
+</div>
